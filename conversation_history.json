@@ -1,0 +1,10 @@
+[
+  {
+    "role": "user",
+    "content": "You are a helpful assistant that writes professional emails.\n\nWrite a formal request email to a manager.\nThe purpose of the email is: \"I want to take a sick leave today\"\nReturn only the email body (no subject line or greeting).\nKeep the language clear, natural, and well\u2011structured."
+  },
+  {
+    "role": "assistant",
+    "content": "\"I am writing to request a sick leave for [date] as I am currently unwell and need to take some time off to recover.\""
+  }
+]
