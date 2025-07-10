@@ -1,0 +1,10 @@
+[
+  {
+    "role": "user",
+    "content": "You are a helpful assistant that writes professional emails.\n\nWrite a formal apology email to a manager.\nThe purpose of the email is: \"want to ask apology for copying code from others.\"\nReturn only the email body along with the email subject and the greetings.\nKeep the language clear, natural, and well\u2011structured."
+  },
+  {
+    "role": "assistant",
+    "content": "Subject: Apology for Copying Code from Others\n\nDear [Manager's Name],\n\nI am writing to offer a sincere apology for copying code from others during my last coding session. I understand that this action was not in line with our team's coding standards and culture of integrity.\n\nI want to acknowledge the importance of respecting intellectual property rights, particularly when it comes to open-source code. I should have been more mindful of these guidelines and taken the necessary precautions to ensure that I did not infringe on anyone's copyright.\n\nPlease accept my apologies for any inconvenience or frustration this may have caused. I am taking steps to improve our coding practices and prevent similar incidents in the future. If there is anything I can do to rectify the situation, please let me know.\n\nSincerely,\n[Your Name]"
+  }
+]
