@@ -18,16 +18,16 @@ class OllamaEGchatbot:
         with open(self.history, "w") as h:
             json.dump(self.conversation_history, h, indent=2)
             
-    def build_prompt(self, data: dict) -> str:
+    def build_prompt(self, data: dict):
         return (
             f"You are a helpful assistant that writes professional emails.\n\n"
             f"Write a {data['tone']} {data['email_type']} email to a {data['recipient_role']}.\n"
             f"The purpose of the email is: \"{data['key_points']}\"\n"
-            f"Return only the email body (no subject line or greeting).\n"
+            f"Return only the email body along with the email subject and the greetings.\n"
             f"Keep the language clear, natural, and well‑structured."
         )
 
-    def generate_email(self, user_data: dict) -> str:
+    def generate_email(self, user_data: dict):
         prompt = self.build_prompt(user_data)
         
         response = ollama.chat(
@@ -38,7 +38,7 @@ class OllamaEGchatbot:
         )
         return response["message"]["content"]
 
-    def chat(self, user_data: dict) -> str:
+    def chat(self, user_data: dict):
         email_body = self.generate_email(user_data)
 
         prompt = self.build_prompt(user_data)
