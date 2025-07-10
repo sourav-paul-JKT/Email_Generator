@@ -66,7 +66,7 @@ ollama serve
 ```
 Make sure the model llama3.2:1b is available:
 ```
-ollama run llama3.2:1b
+ollama pull llama3.2:1b
 ```
 ### 5. Run the App
 ```
